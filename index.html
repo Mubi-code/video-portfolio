@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!-- The "skeleton" of your site. Everything you SEE is written here. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./images/Professional Tutor Portrait.png" />
+  <!-- Makes the site scale correctly on phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mubarik Detamo - Video Editor</title>
+  <meta name="description" content="Video editor specialising in YouTube, ads and short-form content." />
+  <!-- Google Font: change "Inter" and "Space Grotesk" here AND in style.css if you want another font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Thin bar at the top that grows as you scroll (like a video playhead) -->
+  <div class="progress" id="progress"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">MD<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">Menu</button>
+    <nav class="links" id="links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn small">Hire me</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <img class="avatar reveal" src="./images/Professional Tutor Portrait (1).png" alt="Mubarik" onerror="this.style.display='none'" />
+      <p class="pill reveal">
+        <i></i> Available for work
+      </p>
+      <h1 class="reveal">Hi, I'm <em>Mubarik</em></h1>
+      <p class="role reveal">Video Editor &amp; Storyteller</p>
+      <p class="lead reveal">I turn raw footage into videos people actually finish watching: YouTube, ads, and short-form
+        content.</p>
+      <div class="actions reveal">
+        <a href="#work" class="btn">View my work</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+      <!-- Our creative twist: a timecode that counts up like an editing timeline (see main.js) -->
+      <p class="timecode reveal" id="timecode">00:00:00:00</p>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <div class="reveal"><b>100+</b><span>Videos edited</span></div>
+      <div class="reveal"><b>2+</b><span>Years experience</span></div>
+      <div class="reveal"><b>10+</b><span>Happy clients</span></div>
+      <div class="reveal"><b>1M+</b><span>Views generated</span></div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <p class="tag reveal">00:01 / Featured work</p>
+      <h2 class="reveal">Projects I'm proud of</h2>
+      <div class="grid">
+        <!-- TO ADD A VIDEO: copy one <article> block, paste your YouTube link in data-video,
+             and change the title and description. Done! -->
+        <article class="card reveal" data-video="https://youtu.be/yfg5kbWV4BE?si=N-oibUJdGALpwbTm">
+          <div class="thumb"></div>
+          <h3>Don’t Quit: Your Struggles Are Preparing You</h3>
+          <p>Growth rarely begins in comfort.
+          If you've been working hard but feel like nothing is changing, this video is for you.
+          Every mistake becomes a lesson. Every setback becomes a chance to grow stronger. And one small improvement every day can
+          turn into extraordinary results over time.</p>
+        </article>
+        <article class="card reveal" data-video="https://youtu.be/FTReOARv8CU?si=GnQKrWilCiRzgbty">
+          <div class="thumb"></div>
+          <h3>Why Editing Makes Every Video Hit Different</h3>
+          <p>Editing is the glow up: polishing, spicing things up, and making sure every scene hits just right. Fast, slow, or
+          dreamy, it's all editing magic. Next time you watch something dope, remember there's probably an awesome video editor
+          behind it making it pop.
+          
+          Editing isn't just cuts. It's the sauce that brings it all together.</p>
+        </article>
+        <article class="card reveal" data-video="https://youtu.be/3YpXXsvDh_Y?si=1O1Dg80krojPWhme">
+          <div class="thumb"></div>
+          <h3>Meet Your Tutor | Academic Support, Study Skills & Student Success</h3>
+          <p>🎯 **My teaching approach:**
+          I focus on simple explanations, step-by-step problem-solving, practice, and building students' confidence and
+          independent learning skills.
+          
+          🤝 My goal is to help students understand difficult concepts, develop effective study habits, and improve their academic
+          performance.
+</p>
+        </article>
+        <article class="card reveal" data-video="https://youtu.be/jexSnsyF5PE?si=lC0P86hMS1BYj8eh">
+          <div class="thumb"></div>
+          <h3>7 Everyday Things That Hurt Your Baby (Most Parents Don't Know)</h3>
+          <p>In this documentary, we explore 7 everyday habits that child development researchers, pediatric experts, and
+          developmental psychologists have identified as important for healthy infant development.</p>
+        </article>
+        <article class="card reveal" data-video="https://youtu.be/HMNhNkUNamQ?si=fwQEK0urROxCv8Ee">
+          <div class="thumb"></div>
+          <h3>The 5-Minute Daily Habit That Builds Your Baby's Brain For Life</h3>
+          <p>Inside this video we walk through what serve and return actually looks like in everyday moments — a reach, a coo, a
+          glance — and why responding to those small cues matters more than how much you talk, how many toys you own, or how many
+          hours you spend together.</p>
+        </article>
+        <article class="card reveal" data-video="https://youtu.be/208roxCKnkQ?si=deU8OSUlC4ocnaAJ">
+          <div class="thumb"></div>
+          <h3>Animation video project</h3>
+          <p>Making an animation from pictures, lines and texts</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <p class="tag reveal">00:02 / What I do</p>
+      <h2 class="reveal">Services I offer</h2>
+      <div class="grid three">
+        <div class="box reveal"><h3>YouTube Editing</h3><p>Hooks, pacing, captions and sound design that keep viewers watching.</p></div>
+        <div class="box reveal"><h3>Ads &amp; Commercials</h3><p>Punchy edits made to sell, cut for every platform and format.</p></div>
+        <div class="box reveal"><h3>Short-Form</h3><p>Reels, TikToks and Shorts with motion, subtitles and rhythm.</p></div>
+      </div>
+      <h3 class="sub reveal">Tools I use</h3>
+      <ul class="chips reveal">
+        <li>Premiere Pro</li><li>After Effects</li><li>DaVinci Resolve</li><li>CapCut</li><li>Photoshop</li><li>Audition</li>
+      </ul>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <p class="tag reveal">00:03 / About me</p>
+      <h2 class="reveal">Cutting stories that matter</h2>
+      <p class="reveal">I'm a passionate video editor who started editing because I love turning simple footage into engaging visual stories. I
+      enjoy creating cinematic videos, motivational content, and documentary-style edits. My style focuses on clean
+      transitions, smooth pacing, storytelling, and visuals that capture attention.</p>
+      <p class="reveal">My workflow combines creativity, attention to detail, and a commitment to quality. I focus on understanding each
+      client's vision and turning their ideas into compelling videos, with clear communication and timely delivery.</p>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section cta" id="contact">
+      <p class="tag reveal">00:04 / Contact</p>
+      <h2 class="reveal">Let's make something great</h2>
+      <p class="reveal">Have a project in mind? I'd love to hear from you.</p>
+      <div class="actions reveal">
+        <a class="btn" href="https://mail.google.com/mail/?view=cm&to=mubidet@gmail.com&su=Video%20editing%20project"
+          target="_blank" rel="noopener">Send me an email</a>
+        <a class="btn ghost" href="https://youtube.com/@mindmechanicslab-b4t?si=goGMde4ZpSOLfXoE" target="_blank" rel="noopener">YouTube</a>
+        <a class="btn ghost" href="https://t.me/mubi56d" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Mubarik Detamo. All rights reserved.</footer>
+
+  <!-- Pop-up video player. Hidden until a card is clicked (see main.js) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <button class="close" id="close" aria-label="Close video">&times;</button>
+    <div class="frame" id="frame"></div>
+  </div>
+</body>
+</html>
